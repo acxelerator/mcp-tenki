@@ -1,0 +1,18 @@
+[project]
+name = "mcp-tenki"
+version = "0.1.0"
+description = "Get weather of Japan"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.2.0",
+    "pydantic>=2.10.5",
+]
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.3.4",
+    "ruff>=0.9.1",
+]
+
