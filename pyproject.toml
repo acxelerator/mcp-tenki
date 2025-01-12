@@ -17,4 +17,4 @@ dev = [
 ]
 
 [project.scripts]
-mcp-tenki = "src.main:mcp.run"
+mcp-tenki = "mcp_tenki.main:main"

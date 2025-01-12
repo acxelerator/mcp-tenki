@@ -193,3 +193,10 @@ async def get_forecast(prefecture: str) -> str:
     forecasts = [WeatherForecast(**f) for f in res["forecasts"]]
     return "\n------\n".join([f.format_forecast() for f in forecasts])
 
+
+def main():
+    mcp.run(transport="stdio")
+
+
+if __name__ == "__main__":
+    main()
