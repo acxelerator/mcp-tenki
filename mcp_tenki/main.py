@@ -239,8 +239,10 @@ async def get_forecast(prefecture: str) -> str:
     Args:
         prefecture: Name of the prefecture of Japan
     """
-    id_ = convert_pref_to_id(prefecture=prefecture)
-    url = f"https://weather.tsukumijima.net/api/forecast?city={id_}"
+    location = convert_pref_to_id(prefecture=prefecture)
+    if location is None:
+        return "Unable to locate"
+    url = f"https://weather.tsukumijima.net/api/forecast?city={location.id_}"
     res = await make_nws_request(url=url)
 
     if not res:
