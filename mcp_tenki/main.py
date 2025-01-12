@@ -1,5 +1,5 @@
-from domain.weather import WeatherForecast
-from domain.location import Location
+from weather import WeatherForecast
+from location import Location
 
 import httpx
 from typing import Any
