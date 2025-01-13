@@ -237,7 +237,7 @@ async def get_forecast(prefecture: str) -> str:
     Get forecast for a location in Japan
 
     Args:
-        prefecture: Name of the prefecture of Japan
+        prefecture: Name of the prefecture of Japan (in English alphabets, e.g.) "Hokkaido", "Tokyo", "Osaka", etc.)
     """
     location = convert_pref_to_id(prefecture=prefecture)
     if location is None:
