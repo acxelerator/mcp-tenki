@@ -12,6 +12,9 @@ $ uv sync
 
 # Running Server 
 
+
+Run without clone
+
 ```json
 {
     "mcpServers": {
@@ -22,3 +25,17 @@ $ uv sync
     }
 }
 ```
+
+Run with clone
+
+```json
+{
+    "mcpServers": {
+        "tenki": {
+            "command": "uv",
+            "args": ["--directory", "/PATH/TO/REPOSITORY/mcp_tenki", "run", "main.py"]
+        }
+    }
+}
+```
+
