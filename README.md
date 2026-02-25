@@ -15,7 +15,7 @@ $ uv sync
 
 Run without clone
 
-```json
+```json: {{.HOME}}/Library/Application\ Support/Claude/claude_desktop_config.json
 {
     "mcpServers": {
         "tenki": {
@@ -28,12 +28,12 @@ Run without clone
 
 Run with clone
 
-```json
+```json: {{.HOME}}/Library/Application\ Support/Claude/claude_desktop_config.json
 {
     "mcpServers": {
         "tenki": {
             "command": "uv",
-            "args": ["--directory", "/PATH/TO/REPOSITORY/mcp_tenki", "run", "main.py"]
+            "args": ["--directory", "/PATH/TO/REPOSITORY/mcp-tenki/mcp_tenki", "run", "main.py"]
         }
     }
 }
