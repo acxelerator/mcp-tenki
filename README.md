@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/acxelerator-mcp-tenki-badge.png)](https://mseep.ai/app/acxelerator-mcp-tenki)
+
 # mcp-tenki
 
 A MCP server with weather of Japan
